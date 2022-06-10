@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E9D07E;
+  font-family: "Arial", monospace;
+  font-size: 20px;
+  color: #555;
+}
+
+main {
+  background-color: #fff;
+  max-width: 1100px;
+  max-height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 155px;
+  overflow: hidden;
+}
+
+img {
+  vertical-align: middle;
+}
+
+hr {
+  height: 1px;
+  border-width: 0;
+  color: #aaa;
+  margin-bottom: 30px;
+  background-color: #aaa;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.container {
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+}
+
+.hero__left {
+  width: 450px;
+  padding: 50px;
+  background-color: #f2f2f2;
+  max-height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.hero__left::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+.hero__left::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.hero__left::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.hero__left::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+.hero__left__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 350px;
+}
+
+.hero__left__heading {
+  color: #555;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.hero__right {
+  width: 700px;
+  padding: 30px;
+  height: 550px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.hero__right::-webkit-scrollbar {
+  width: 8px;
+  background-color: #ddd;
+}
+
+.hero__right::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.hero__right::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.hero__right::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+.hero__right__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.hero__right__wrapper__text {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.plus {
+  margin-right: 30px;
+}
+
+.minus {
+  margin-right: 30px;
+}
+
+.form {
+  height: 350px;
+}
+
+.card__detail {
+  border: 1px solid #aaa;
+  box-shadow: 0 0 5px #eee;
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border: 3px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.card__input {
+  display: none;
+}
+
+.card__input:checked + .card__detail {
+  border: 3px solid blue;
+}
+
+.card__input:hover + .card__detail {
+  opacity: 0.75;
+}
+
+.card__input:active + .card__detail {
+  opacity: 0.5;
+}
+
+.card__logo {
+  margin-bottom: 30px;
+}
+
+.card__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.card__text {
+  letter-spacing: 2px;
+}
+
+.payment__detail {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid transparent;
+  position: relative;
+  padding: 20px 10px;
+  padding-left: 50px;
+}
+
+.payment__price {
+  flex-grow: 1;
+  text-align: right;
+  color: #8B90C1;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.payment__input:checked + .payment__detail .payment__price {
+  color: lightgreen;
+}
+
+.payment__heading {
+  padding-bottom: 10px;
+  font-style: 22px;
+}
+
+.payment__input {
+  display: none;
+}
+
+.payment__text {
+  color: #aaa;
+}
+
+.payment__detail::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background: url("./../images/minus.svg") no-repeat;
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 12px);
+  border: 1px solid grey;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.payment__input:checked + .payment__detail::before {
+  background: url("./../images/plus.svg") no-repeat;
+}
+/*# sourceMappingURL=main.css.map */

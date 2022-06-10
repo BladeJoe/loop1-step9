@@ -1,0 +1,66 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E9D07E;
+    font-family: "Arial", monospace;
+    font-size: 20px;
+    color: #555;
+    
+}
+
+main {
+    background-color: #fff;
+    max-width: 1100px;
+    max-height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 155px;
+    overflow: hidden;
+}
+
+img {
+    vertical-align: middle;
+}
+
+hr { 
+    height: 1px;
+    border-width: 0;
+    color: #aaa;
+    margin-bottom: 30px;
+    background-color: #aaa;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
